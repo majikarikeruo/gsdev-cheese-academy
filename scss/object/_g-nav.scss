@@ -1,0 +1,30 @@
+@use '../foundation/mixin' as m;
+
+.p-header-nav {
+    @include m.mq(m.$sp) {
+        display: none;
+    }
+}
+.p-header-nav__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #efefef;
+}
+
+.p-header-nav__logo {
+    max-width: 200px;
+}
+
+.p-global-nav {
+    display: flex;
+}
+
+.p-global-nav__item {
+    a {
+        display: block;
+        margin-left: 32px;
+        text-transform: uppercase;
+    }
+}

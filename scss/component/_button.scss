@@ -1,0 +1,16 @@
+@use '../foundation/mixin' as m;
+
+.c-button {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-width: 264px;
+    padding: 16px 0;
+    border: none;
+    background: m.$themeColor;
+    color: m.$whiteColor;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+}

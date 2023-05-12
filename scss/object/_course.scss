@@ -1,0 +1,87 @@
+@use '../foundation/mixin' as m;
+
+.p-section-course {
+    padding-top: 56px;
+}
+.p-section-course__header {
+    margin-bottom: 59px;
+    text-align: center;
+
+    @include m.mq(m.$sp) {
+        margin-bottom: 32px;
+        text-align: left;
+    }
+}
+
+.p-section-course__paragraph {
+    margin-top: 21px;
+}
+
+.p-section-course__item {
+    background: #fafafa;
+}
+
+.p-course-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    @include m.mq(m.$sp) {
+        flex-direction: column-reverse;
+    }
+}
+.p-course-box--reverse {
+    flex-direction: row;
+
+    @include m.mq(m.$sp) {
+        flex-direction: column-reverse;
+    }
+}
+
+.p-course-box__info {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 8px 0 48px;
+
+    @include m.mq(m.$sp) {
+        display: block;
+        width: 100%;
+        padding: 0 10px 35px;
+    }
+}
+
+.p-course-box__info--reverse {
+    justify-content: flex-end;
+    padding: 0 48px 0 8px;
+}
+
+.p-course-box__inner {
+    max-width: 522px;
+
+    p {
+        text-align: justify;
+    }
+}
+
+.p-course-box__img {
+    width: 50%;
+
+    @include m.mq(m.$sp) {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+.p-course-box__title {
+    margin-bottom: 27px;
+    font-size: 2.1rem;
+    font-weight: bold;
+    white-space: nowrap;
+
+    @include m.mq(m.$sp) {
+        margin-bottom: 13px;
+        font-size: 1.6rem;
+    }
+}

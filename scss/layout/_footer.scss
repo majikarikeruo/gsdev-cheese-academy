@@ -1,0 +1,20 @@
+@use '../foundation/mixin' as m;
+
+.l-footer {
+    padding: 28px 0;
+    background: #707070;
+    text-align: center;
+
+    @include m.mq(m.$sp) {
+        padding: 15px 0 19px;
+    }
+}
+
+.l-footer__copyrights {
+    color: #fff;
+    font-size: 1.4rem;
+
+    @include m.mq(m.$sp) {
+        font-size: 1.2rem;
+    }
+}

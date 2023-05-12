@@ -1,0 +1,121 @@
+@use '../foundation/mixin' as m;
+
+.c-form {
+}
+.c-form__list {
+    margin-bottom: 40px;
+
+    @include m.mq(m.$sp) {
+        margin-bottom: 24px;
+    }
+}
+
+.c-form__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    @include m.mq(m.$sp) {
+        display: block;
+        margin-bottom: 36px;
+    }
+}
+
+.c-form__item__multiple-field {
+    align-items: flex-start;
+
+    @include m.mq(m.$sp) {
+        margin-bottom: 24px;
+    }
+}
+
+.c-form__label {
+    display: block;
+    width: 110px;
+    min-width: 110px;
+    margin-right: 24px;
+    font-weight: bold;
+    text-align: right;
+
+    @include m.mq(m.$sp) {
+        width: 100%;
+        min-width: 100%;
+        margin: 0 0 20px;
+        text-align: left;
+    }
+}
+
+.c-form__label--textarea {
+    padding-top: 16px;
+
+    @include m.mq(m.$sp) {
+        padding-top: 0;
+    }
+}
+
+.c-form__input-field {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 388px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    font-size: 1.6rem;
+
+    @include m.mq(m.$sp) {
+        width: 100%;
+    }
+}
+
+.c-form__radio-field {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    border-radius: 50%;
+    vertical-align: -2px;
+    background: #eeeeee;
+
+    &:checked {
+        background: m.$themeColor;
+    }
+}
+
+.c-form__radio-label {
+    display: inline-block;
+    margin-left: 16px;
+
+    @include m.mq(m.$sp) {
+        font-size: 1.4rem;
+    }
+}
+
+.c-form__submit-field {
+    text-align: center;
+}
+
+.c-form-radio {
+    @include m.mq(m.$sp) {
+        margin-bottom: 40px;
+    }
+}
+
+.c-form-radio__item {
+    &:not(:last-of-type) {
+        margin-bottom: 24px;
+
+        @include m.mq(m.$sp) {
+            margin-bottom: 20px;
+        }
+    }
+
+    label {
+        @include m.mq(m.$sp) {
+            display: flex;
+        }
+    }
+}

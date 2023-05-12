@@ -1,0 +1,10 @@
+@use '../foundation/mixin' as m;
+
+.l-container {
+    max-width: 1140px;
+    margin: auto;
+
+    @include m.mq(m.$sp) {
+        padding: 0 10px;
+    }
+}

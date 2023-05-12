@@ -1,0 +1,15 @@
+@use 'foundation/mixin';
+
+.u-break-at-mobile {
+    display: inline;
+
+    @include mixin.mq(mixin.$sp) {
+        display: block;
+    }
+}
+
+.u-break-at-pc {
+    @include mixin.mq(mixin.$sp) {
+        display: none;
+    }
+}

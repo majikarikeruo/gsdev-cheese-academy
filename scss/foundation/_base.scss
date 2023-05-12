@@ -1,0 +1,35 @@
+@use 'mixin';
+
+* {
+    @include mixin.mq(mixin.$sp) {
+        box-sizing: border-box;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #333333;
+    font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-feature-settings: "palt";
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.6rem;
+    line-height: 1.6875;
+    letter-spacing: 0.05em;
+
+    @include mixin.mq(mixin.$sp) {
+        font-size: 1.5rem;
+    }
+}
+
+a {
+    color: #333333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}

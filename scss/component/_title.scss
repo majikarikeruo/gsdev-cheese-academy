@@ -1,0 +1,28 @@
+@use '../foundation/mixin' as m;
+
+.c-section-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::after {
+        content: attr(data-ja);
+        display: block;
+        margin-top: 6px;
+        color: #333;
+        font-size: 0.6667em;
+        font-weight: normal;
+    }
+}
+
+.c-section-title--ja {
+    display: block;
+    margin-top: 0.640625rem;
+    color: #333;
+    font-size: 0.6667em;
+}
+
+.c-section-title--color-yellow {
+    color: m.$themeColor;
+}

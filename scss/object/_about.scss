@@ -1,0 +1,27 @@
+@use '../foundation/mixin' as m;
+
+.p-section-about {
+    padding: 72px 0 0;
+
+    @include m.mq(m.$sp) {
+        padding: 32px 0 0;
+    }
+}
+
+.p-section-about__header {
+    margin-bottom: 53px;
+
+    @include m.mq(m.$sp) {
+        margin-bottom: 32px;
+    }
+}
+
+.p-section-about__body {
+    margin-bottom: 75px;
+    text-align: center;
+
+    @include m.mq(m.$sp) {
+        margin-bottom: 32px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "cheeseacademy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack -w"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {},
+    "browserslist": [
+        "last 2 versions",
+        "ie 11"
+    ],
+    "devDependencies": {
+        "prettier": "^2.0.5",
+        "stylelint": "^13.6.0",
+        "stylelint-config-prettier": "^7.0.0",
+        "stylelint-config-recess-order": "^2.0.4",
+        "stylelint-config-recommended": "^3.0.0",
+        "stylelint-order": "^4.1.0",
+        "stylelint-prettier": "^1.1.2"
+    }
+}

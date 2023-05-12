@@ -1,0 +1,33 @@
+@use '../foundation/mixin' as m;
+
+.p-main-visual {
+    display: grid;
+    place-content: center;
+    background: url("../images/header/hero_img.jpg") no-repeat left center;
+    background-size: cover;
+    height: 36.6vw;
+
+    @include m.mq(m.$sp) {
+        height: 100vw;
+    }
+}
+.p-main-visual__catch-copy {
+    color: m.$whiteColor;
+    font-size: 4.8rem;
+    font-weight: bold;
+    text-align: center;
+
+    @include m.mq(m.$sp) {
+        font-size: 2.4rem;
+    }
+}
+
+.p-main-visual__sub-copy {
+    display: block;
+    margin-top: 12px;
+    font-size: 3.2rem;
+
+    @include m.mq(m.$sp) {
+        font-size: 1.6rem;
+    }
+}

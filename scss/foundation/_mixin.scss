@@ -1,0 +1,19 @@
+/*
+* BreakPoints
+*/
+$sp: 768px;
+
+/*
+* color
+*/
+$whiteColor: #fff;
+$themeColor: #ffd61a;
+
+/*
+* mixin
+*/
+@mixin mq($break-point) {
+    @media screen and (max-width: $break-point) {
+        @content;
+    }
+}

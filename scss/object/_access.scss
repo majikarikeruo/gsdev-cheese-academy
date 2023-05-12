@@ -1,0 +1,70 @@
+@use '../foundation/mixin' as m;
+
+.p-section-access {
+    background: #fafafa;
+}
+
+.p-section-access__header {
+    padding: 56px 0 35px;
+
+    @include m.mq(m.$sp) {
+        padding: 32px 0 35px;
+    }
+}
+
+.p-section-access__maps iframe {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1366 / 300;
+
+    @include m.mq(m.$sp) {
+        aspect-ratio: 375 / 320;
+    }
+}
+
+.p-place-info {
+    display: grid;
+    place-items: center;
+    padding: 59px 0 75px;
+
+    @include m.mq(m.$sp) {
+        display: block;
+        padding: 35px 10px;
+    }
+}
+
+.p-place-info__item {
+    display: flex;
+
+    @include m.mq(m.$sp) {
+        display: block;
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: 9px;
+
+        @include m.mq(m.$sp) {
+            margin-bottom: 29px;
+        }
+    }
+}
+
+.p-place-info__title {
+    font-weight: bold;
+    min-width: 98px;
+    width: 98px;
+    margin-right: 24px;
+    letter-spacing: 0.0125em;
+    text-align: right;
+
+    @include m.mq(m.$sp) {
+        width: 100%;
+        min-width: 100%;
+        margin-bottom: 6px;
+        text-align: left;
+    }
+}
+
+.p-place-info__detail {
+    flex: 1 1 auto;
+}

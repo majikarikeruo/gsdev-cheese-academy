@@ -1,0 +1,54 @@
+@use '../foundation/mixin' as m;
+
+.p-section-news {
+    padding: 88px 0 64px;
+
+    @include m.mq(m.$sp) {
+        padding: 32px 0 40px;
+    }
+}
+.p-section-news__header {
+    margin-bottom: 56px;
+
+    @include m.mq(m.$sp) {
+        margin-bottom: 32px;
+    }
+}
+
+.p-section-news__body {
+}
+
+.p-section-news__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.p-news-list {
+    display: flex;
+    margin: 0 0 40px;
+    gap: 0 24px;
+
+    @include m.mq(m.$sp) {
+        display: block;
+    }
+}
+
+.p-news-list__excerpt {
+    padding: 19px 16px 0;
+
+    @include m.mq(m.$sp) {
+        padding: 19px 16px;
+    }
+}
+
+.p-news-list__title {
+    margin-bottom: 13px;
+    font-weight: bold;
+}
+
+.p-news-list__date {
+    margin-top: 10px;
+    color: #999999;
+    font-size: 1.4rem;
+    line-height: 1;
+}
